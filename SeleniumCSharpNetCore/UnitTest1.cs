@@ -11,7 +11,9 @@ namespace SeleniumCSharpNetCore
         public void Setup()
         {
             Console.WriteLine("SetUp");
-            Driver = new ChromeDriver();
+            ChromeOptions options = new ChromeOptions();
+            options.AddArgument("--headless");
+            Driver = new ChromeDriver(options);
         }
 
         [Test]
