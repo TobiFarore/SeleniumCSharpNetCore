@@ -2,6 +2,7 @@
 using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using SeleniumCSharpNetCore.Pages;
 using System;
 using System.IO;
 using System.Reflection;
@@ -18,7 +19,7 @@ namespace SeleniumCSharpNetCore
             Console.WriteLine("SetUp");
             new DriverManager().SetUpDriver(new ChromeConfig());
             ChromeOptions options = new ChromeOptions();
-            options.AddArgument("--headless");
+            //options.AddArgument("--headless");
             Driver = new ChromeDriver(options);
         }
 
@@ -41,16 +42,13 @@ namespace SeleniumCSharpNetCore
         public void LoginTest()
         {
             Driver.Navigate().GoToUrl("http://eaapp.somee.com");
-            Driver.FindElement(By.Id("loginLink")).Click();
-            Driver.FindElement(By.Id("UserName")).SendKeys("admin");
-            Driver.FindElement(By.Id("Password")).SendKeys("password");
-            Driver.FindElement(By.XPath("//input[@value='Log in']")).Submit();
+            HomePage homePage = new HomePage();
+            LoginPage loginPage = new LoginPage();
 
-            bool isEmployeeListVisible = Driver.FindElement(By.LinkText("Employee List")).Displayed;
-            var dir = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location).ToString();
-            var screenshot = (Driver as ITakesScreenshot).GetScreenshot();
-            screenshot.SaveAsFile($"{dir}\\screenshot2.png");
-            Assert.That(isEmployeeListVisible, Is.True);
+            homePage.ClickLoginLink();
+            loginPage.EnterLoginDetails("admin", "password");
+            loginPage.SubmitLogin();
+            Assert.That(homePage.IsLogOffButtonDisplayed, Is.True, "Log off doesn't exisit");
         }
 
         [TearDown]
