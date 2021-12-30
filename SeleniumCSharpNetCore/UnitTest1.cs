@@ -49,7 +49,7 @@ namespace SeleniumCSharpNetCore
             bool isEmployeeListVisible = Driver.FindElement(By.LinkText("Employee List")).Displayed;
             var dir = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location).ToString();
             var screenshot = (Driver as ITakesScreenshot).GetScreenshot();
-            screenshot.SaveAsFile($"{dir}\\screenshot.png");
+            screenshot.SaveAsFile($"{dir}\\screenshot2.png");
             Assert.That(isEmployeeListVisible, Is.True);
         }
 
