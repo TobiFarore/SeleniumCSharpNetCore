@@ -33,7 +33,7 @@ namespace SeleniumCSharpNetCore
             //var dir = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location).ToString();
             //var screenshot = (Driver as ITakesScreenshot).GetScreenshot();
             //screenshot.SaveAsFile($"{dir}\\screenshot.png");
-            Assert.Pass();
+            //Assert.Pass();
         }
 
         //[Test]
