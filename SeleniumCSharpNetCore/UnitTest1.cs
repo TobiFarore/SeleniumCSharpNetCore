@@ -3,6 +3,8 @@ using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using System;
+using System.IO;
+using System.Reflection;
 using WebDriverManager;
 using WebDriverManager.DriverConfigs.Impl;
 
@@ -28,8 +30,10 @@ namespace SeleniumCSharpNetCore
             Driver.FindElement(By.XPath("//input[@name='ctl00$ContentPlaceHolder1$ChildMeal1']/following-sibling::div[text()='Broccoli']")).Submit();
 
             CustomControl.ComboBox("ContentPlaceHolder1_AllMealsCombo", "Apple");
-            
-            Console.WriteLine("Test1");
+
+            var dir = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location).ToString();
+            var screenshot = (Driver as ITakesScreenshot).GetScreenshot();
+            screenshot.SaveAsFile($"{dir}\\screenshot.png");
             Assert.Pass();
         }
 
@@ -43,7 +47,9 @@ namespace SeleniumCSharpNetCore
             Driver.FindElement(By.XPath("//input[@value='Log in']")).Submit();
 
             bool isEmployeeListVisible = Driver.FindElement(By.LinkText("Employee List")).Displayed;
-
+            var dir = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location).ToString();
+            var screenshot = (Driver as ITakesScreenshot).GetScreenshot();
+            screenshot.SaveAsFile($"{dir}\\screenshot.png");
             Assert.That(isEmployeeListVisible, Is.True);
         }
 
