@@ -16,7 +16,7 @@ namespace SeleniumCSharpNetCore
             Console.WriteLine("SetUp");
             new DriverManager().SetUpDriver(new ChromeConfig());
             ChromeOptions options = new ChromeOptions();
-            options.AddArgument("--headless");
+           // options.AddArgument("--headless");
             Driver = new ChromeDriver(options);
         }
 
@@ -33,10 +33,25 @@ namespace SeleniumCSharpNetCore
             Assert.Pass();
         }
 
+        [Test]
+        public void LoginTest()
+        {
+            Driver.Navigate().GoToUrl("http://eaapp.somee.com");
+            Driver.FindElement(By.Id("loginLink")).Click();
+            Driver.FindElement(By.Id("UserName")).SendKeys("admin");
+            Driver.FindElement(By.Id("Password")).SendKeys("password");
+            Driver.FindElement(By.XPath("//input[@value='Log in']")).Submit();
+
+            bool isEmployeeListVisible = Driver.FindElement(By.LinkText("Employee List")).Displayed;
+
+            Assert.That(isEmployeeListVisible, Is.True);
+        }
+
         [TearDown]
         public void TearDown()
         {
             Driver.Quit();
+            Console.WriteLine("TearDown");
         }
     }
 }

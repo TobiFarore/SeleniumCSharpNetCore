@@ -198,3 +198,16 @@ C:\Users\user\Git\SeleniumCSharpNetCore\SeleniumCSharpNetCore\obj\Debug\netcorea
 C:\Users\user\Git\SeleniumCSharpNetCore\SeleniumCSharpNetCore\obj\Debug\netcoreapp3.1\SeleniumCSharpNetCore.dll
 C:\Users\user\Git\SeleniumCSharpNetCore\SeleniumCSharpNetCore\obj\Debug\netcoreapp3.1\SeleniumCSharpNetCore.pdb
 C:\Users\user\Git\SeleniumCSharpNetCore\SeleniumCSharpNetCore\obj\Debug\netcoreapp3.1\SeleniumCSharpNetCore.genruntimeconfig.cache
+C:\Users\user\Git\SeleniumCSharpNetCore\SeleniumCSharpNetCore\bin\Debug\netcoreapp3.1\AngleSharp.dll
+C:\Users\user\Git\SeleniumCSharpNetCore\SeleniumCSharpNetCore\bin\Debug\netcoreapp3.1\Microsoft.Win32.Registry.dll
+C:\Users\user\Git\SeleniumCSharpNetCore\SeleniumCSharpNetCore\bin\Debug\netcoreapp3.1\ICSharpCode.SharpZipLib.dll
+C:\Users\user\Git\SeleniumCSharpNetCore\SeleniumCSharpNetCore\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\user\Git\SeleniumCSharpNetCore\SeleniumCSharpNetCore\bin\Debug\netcoreapp3.1\System.Security.AccessControl.dll
+C:\Users\user\Git\SeleniumCSharpNetCore\SeleniumCSharpNetCore\bin\Debug\netcoreapp3.1\System.Security.Principal.Windows.dll
+C:\Users\user\Git\SeleniumCSharpNetCore\SeleniumCSharpNetCore\bin\Debug\netcoreapp3.1\System.Text.Encoding.CodePages.dll
+C:\Users\user\Git\SeleniumCSharpNetCore\SeleniumCSharpNetCore\bin\Debug\netcoreapp3.1\WebDriverManager.dll
+C:\Users\user\Git\SeleniumCSharpNetCore\SeleniumCSharpNetCore\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\Microsoft.Win32.Registry.dll
+C:\Users\user\Git\SeleniumCSharpNetCore\SeleniumCSharpNetCore\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Security.AccessControl.dll
+C:\Users\user\Git\SeleniumCSharpNetCore\SeleniumCSharpNetCore\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
+C:\Users\user\Git\SeleniumCSharpNetCore\SeleniumCSharpNetCore\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
+C:\Users\user\Git\SeleniumCSharpNetCore\SeleniumCSharpNetCore\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Text.Encoding.CodePages.dll
