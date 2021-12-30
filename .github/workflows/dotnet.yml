@@ -21,7 +21,5 @@ jobs:
       run: dotnet restore
     - name: Build
       run: dotnet build --configuration Release --no-restore
-    - name: setup-chromedriver
-      uses: nanasess/setup-chromedriver@v1.0.1
     - name: Test
       run: dotnet test --no-build --verbosity normal
