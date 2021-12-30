@@ -16,7 +16,7 @@ namespace SeleniumCSharpNetCore
             ChromeOptions options = new ChromeOptions();
             options.AddArgument("start-maximized");
             options.AddArgument("--disable-gpu");
-            //options.AddArgument("--headless");
+            options.AddArgument("--headless");
             new DriverManager().SetUpDriver(new ChromeConfig());
             Driver = new ChromeDriver(options);
         }
