@@ -51,19 +51,39 @@
             },
             "NUnit": {
               "target": "Package",
-              "version": "[3.13.1, )"
+              "version": "[3.13.2, )"
             },
             "NUnit3TestAdapter": {
               "target": "Package",
-              "version": "[3.17.0, )"
+              "version": "[4.2.0, )"
+            },
+            "Selenium.Support": {
+              "target": "Package",
+              "version": "[4.1.0, )"
             },
             "Selenium.WebDriver": {
               "target": "Package",
-              "version": "[3.14.0, )"
+              "version": "[4.1.0, )"
             },
             "Selenium.WebDriver.ChromeDriver": {
               "target": "Package",
               "version": "[96.0.4664.4500, )"
+            },
+            "SpecFlow": {
+              "target": "Package",
+              "version": "[3.9.40, )"
+            },
+            "SpecFlow.Assist.Dynamic": {
+              "target": "Package",
+              "version": "[1.4.2, )"
+            },
+            "SpecFlow.NUnit": {
+              "target": "Package",
+              "version": "[3.9.40, )"
+            },
+            "SpecFlow.Tools.MsBuild.Generation": {
+              "target": "Package",
+              "version": "[3.9.40, )"
             },
             "WebDriverManager": {
               "target": "Package",
