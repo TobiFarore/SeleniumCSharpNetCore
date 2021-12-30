@@ -210,4 +210,3 @@ C:\Users\user\Git\SeleniumCSharpNetCore\SeleniumCSharpNetCore\obj\Debug\netcorea
 C:\Users\user\Git\SeleniumCSharpNetCore\SeleniumCSharpNetCore\obj\Debug\netcoreapp3.1\SeleniumCSharpNetCore.dll
 C:\Users\user\Git\SeleniumCSharpNetCore\SeleniumCSharpNetCore\obj\Debug\netcoreapp3.1\SeleniumCSharpNetCore.pdb
 C:\Users\user\Git\SeleniumCSharpNetCore\SeleniumCSharpNetCore\obj\Debug\netcoreapp3.1\SeleniumCSharpNetCore.genruntimeconfig.cache
-C:\Users\user\Git\SeleniumCSharpNetCore\SeleniumCSharpNetCore\obj\Debug\netcoreapp3.1\SeleniumCSharpNetCore.csproj.AssemblyReference.cache
